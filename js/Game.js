@@ -44,6 +44,9 @@
  	/**
  	 * Handles onscreen  keyboard button clicks
  	 * @param (HTMLButtonElement) button - The clicked button element
+ 	 * The conditional statement if(!this.gameover) checks to see if the 
+ 	 * game has ended. If it has, it prevents user from activating methods by
+ 	 * pressing keys after the game has ended.
  	 */
  	handleInteraction(button){
  		if(!this.gameover){
@@ -126,6 +129,11 @@
  		}
  	}
 
+ 	/*
+ 	* Removes all li elements from the Phrase ul element
+ 	* Enables all of the onscreen keyboard buttons and updates the class
+ 	* Resets all heart images 
+ 	*/
  	reset(){
  		const list =document.querySelector("#phrase ul");
  		const listItems = document.querySelectorAll("#phrase ul li");

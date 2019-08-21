@@ -4,6 +4,12 @@
 
 let game;
 
+/*
+ *Calls startGame() when start button is clicked.
+ *Once the start button has been clicked, the document listens
+ *for keypresses 
+ */
+
 document.querySelector("#btn__reset").addEventListener("click", function(){
 	game = new Game();
 	game.startGame();
@@ -19,6 +25,9 @@ document.querySelector("#btn__reset").addEventListener("click", function(){
 	})	
 })
 
+/*
+ * If the letter buttons are clicked, the handleInteraction method gets called.
+ */
 document.querySelector("#qwerty").addEventListener("click", function(e){
 	if(e.target.type === "submit"){
 		game.handleInteraction(e.target);
