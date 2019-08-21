@@ -118,7 +118,7 @@
  		}
  		else{
 	 		overlay.style.display = "";
-	 		document.querySelector("#overlay h1").innerText = "You Lost. Better Luck Next Time!";
+	 		document.querySelector("#overlay h1").innerText = "You Lost!. Better Luck Next Time!";
 	 		overlay.classList.remove("start");
 	 		overlay.classList.add("lose");
 	 		this.reset();
